@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#101828"/><path d="M0 630V420l180-150 150 130 190-220 220 250 170-140 220 200 70-90v230z" fill="#0b7a75"/><circle cx="930" cy="140" r="52" fill="#e4572e"/><text x="70" y="260" font-family="Arial,sans-serif" font-weight="800" font-size="92" fill="#fff">DPX360</text><text x="74" y="330" font-family="Arial,sans-serif" font-size="36" fill="#d0d5dd">Redesign concept · Run &amp; Ride · Grand Prix 2027</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#102C25"/>
+  <path d="M0 470c170-95 325-70 474 0s327 85 484 10 180-78 242-62v212H0z" fill="#173D34"/>
+  <path d="M0 520c176-77 333-51 487 8s326 63 480-4 174-54 233-44" fill="none" stroke="#D8B779" stroke-opacity=".55" stroke-width="2"/>
+  <text x="80" y="265" fill="#F7F5ED" font-family="Arial,sans-serif" font-size="94" font-weight="700" letter-spacing="-5">DPX360</text>
+  <text x="86" y="328" fill="#D8B779" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5">THE DISCOVERY PARK</text>
+  <text x="86" y="390" fill="#D2D9D1" font-family="Arial,sans-serif" font-size="30">Run &amp; Ride · Grand Prix · Outdoor discovery</text>
+</svg>

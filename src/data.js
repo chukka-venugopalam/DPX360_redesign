@@ -1,6 +1,5 @@
-// All content lives here. Facts (names, prices, dates) come from the public DPX site
-// as observed 2026-11-10; copy, layout and art are original to this concept.
-// Per-city dates/venues are NOT published yet, so the concept shows "announcing soon".
+// Business facts below were checked against the public DPX site on 12 Nov 2026.
+// The illustrations are original to this concept; client-approved photography is still needed.
 
 export const NAV = [
   { id: 'cities', label: 'Run & Ride cities' },
@@ -12,9 +11,28 @@ export const NAV = [
 
 const ap = ['Rajahmundry', 'Kakinada', 'Visakhapatnam', 'Vijayawada', 'Ongole', 'Nellore', 'Anantapur', 'Kadapa', 'Kurnool'];
 const ts = ['Khammam', 'Warangal', 'Nalgonda', 'Karimnagar', 'Hyderabad', 'Mancherial', 'Nizamabad', 'Mahbubnagar'];
+const cityDates = {
+  Rajahmundry: '15 Nov 2026',
+  Kakinada: '22 Nov 2026',
+  Khammam: '28 Nov 2026',
+  Visakhapatnam: '29 Nov 2026',
+  Warangal: '29 Nov 2026',
+  Nalgonda: '5 Dec 2026',
+  Karimnagar: '5 Dec 2026',
+  Hyderabad: '6 Dec 2026',
+  Mancherial: '6 Dec 2026',
+  Ongole: '12 Dec 2026',
+  Nizamabad: '12 Dec 2026',
+  Vijayawada: '13 Dec 2026',
+  Mahbubnagar: '13 Dec 2026',
+  Nellore: '19 Dec 2026',
+  Anantapur: '19 Dec 2026',
+  Kadapa: '20 Dec 2026',
+  Kurnool: '20 Dec 2026',
+};
 export const CITIES = [
-  ...ap.map((name) => ({ name, slug: name.toLowerCase(), state: 'Andhra Pradesh' })),
-  ...ts.map((name) => ({ name, slug: name.toLowerCase(), state: 'Telangana' })),
+  ...ap.map((name) => ({ name, slug: name.toLowerCase(), state: 'Andhra Pradesh', date: cityDates[name] })),
+  ...ts.map((name) => ({ name, slug: name.toLowerCase(), state: 'Telangana', date: cityDates[name] })),
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export const DESTINATIONS = [
@@ -126,9 +144,12 @@ export const CONTACT = {
   member: ['ATOAI allied member', 'Member of Equestrian Association'],
 };
 
-// Their numbers: Lighthouse report saved 2026-11-10 (mobile, v13.5) plus page measurements.
-// Concept numbers: filled from our own Lighthouse run (see /pitch).
-export const PITCH = {
-  theirs: { perf: 85, cls: '0.055', lcp: '4.2 s', si: '1.5 s', weight: '8.9 MB', video: '3.2 MB before Play', screens: '≈ 54 screens (45,822 px at 370 px wide)' },
-  concept: { perf: 'TBD', cls: 'TBD', lcp: 'TBD', si: 'TBD', weight: '0.27 MB first load', video: '0 KB until tap', screens: '≈ 27 screens (22,510 px at 390 px wide), all sections kept' },
+export const LINKS = {
+  website: 'https://www.dpxlive360.com/',
+  booking: 'https://www.dpxlive360.com/grand-prix/student-beginner',
+  launchpad: 'https://www.dpxlive360.com/launchpad',
+  login: 'https://www.dpxlive360.com/portal/login',
+  affiliate: 'https://www.dpxlive360.com/affiliate/apply',
+  whatsapp: 'https://wa.me/918186085876',
+  film: 'https://www.dpxlive360.com/hp/assets/live-discovery-park.mp4',
 };
